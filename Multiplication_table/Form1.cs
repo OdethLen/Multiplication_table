@@ -4,16 +4,16 @@ namespace Multiplication_table
 {
     public partial class Form1 : Form
     {
-        
+        int number;
         public Form1()
         {
             InitializeComponent();
-        
+            number = 0;
         }
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            int number;
+            
             if (int.TryParse(txtNumber.Text, out number))
             {
                 // Generar y mostrar la tabla de multiplicar
