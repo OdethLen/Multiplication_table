@@ -55,6 +55,7 @@
             txtMultiplicationTable.Location = new Point(112, 80);
             txtMultiplicationTable.Multiline = true;
             txtMultiplicationTable.Name = "txtMultiplicationTable";
+            txtMultiplicationTable.ReadOnly = true;
             txtMultiplicationTable.Size = new Size(183, 173);
             txtMultiplicationTable.TabIndex = 2;
             // 

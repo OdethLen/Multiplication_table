@@ -13,16 +13,20 @@ namespace Multiplication_table
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            
-            if (int.TryParse(txtNumber.Text, out number))
+          
+            try
             {
+                number = Convert.ToInt32(txtNumber.Text);
                 // Generar y mostrar la tabla de multiplicar
                 txtMultiplicationTable.Text = PrintTable(number, 1);
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Por favor, ingrese un número válido.");
+                MessageBox.Show("Incorrect format");
+                return;
+                
             }
+            
         }
 
         private string PrintTable (int number, int multiplier)
